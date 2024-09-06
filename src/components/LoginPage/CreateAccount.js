@@ -1,8 +1,7 @@
 import React from 'react'
-import InputField from '../InputField/InputField'
-import CustomCheckbox from '../CustomCheckbox/CustomCheckbox'
 import Button from '../Button/Button'
 import { EyeIcon, HideEye } from '@/pages/icons'
+import InputField from '../InputField/InputField'
 
 const CreateAccount = ({type, setType}) => {
     return (
