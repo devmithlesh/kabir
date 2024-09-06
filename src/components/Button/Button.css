@@ -1,0 +1,29 @@
+/* Button Component */
+.button {
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--black);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: 0.1s ease-in;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 8px 12px;
+}
+
+.goldenButton{
+    border-radius: 100px;
+    background: var(--golden2);
+    color: var(--liteBlack);
+    padding: 15px 30px;
+    font-size: 15px;
+    min-height: 50px;
+}
+
+/*--------- Button Component ---------*/

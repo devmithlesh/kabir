@@ -1,0 +1,87 @@
+.checboxWrap {
+  display: flex;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.4s;
+  gap: 12px;
+  width: max-content;
+}
+
+.checboxWrap.disable {
+  cursor: not-allowed;
+}
+
+.checboxWrap input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmarkNew {
+  position: relative;
+  height: 18px;
+  min-width: 18px;
+  background: var(--white);
+  border-radius: 6px;
+  border: 1px solid var(--grey2);
+  overflow: hidden;
+}
+
+.checboxWrap .checkmarkNew {
+  transition: 0.2s;
+}
+
+.checboxWrap.disable input:checked~.checkmarkNew {
+  background: var(--grey2);
+  border-color: var(--grey1);
+}
+
+.checboxWrap input:disabled~.checkmarkNew {
+  background: var(--grey2);
+  border-color: var(--grey1);
+}
+
+.checboxWrap input:disabled~.checkmarkNew {
+  border: 1px solid var(--grey1) !important;
+}
+
+.checboxWrap input:checked~.checkmarkNew {
+  background: var(--white);
+  border: 1px solid var(--golden1);
+}
+
+.checkmarkNew:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checboxWrap input:checked~.checkmarkNew:after {
+  display: block;
+}
+
+.checboxWrap .checkmarkNew:after {
+  width: 9px;
+  height: 9px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background: var(--golden1);
+}
+
+.checboxWrap p {
+  line-height: unset;
+  transition: 0.2s;
+  color: var(--grey1);
+  line-height: 100%;
+}

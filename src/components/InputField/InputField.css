@@ -1,0 +1,74 @@
+.formGroups {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.formGroups label {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    line-height: 125%;
+    font-weight: 500;
+    color: var(--liteBlack);
+    margin-bottom: 8px;
+}
+
+.formGroups input {
+    min-height: 46px;
+    display: block;
+    width: 100%;
+    padding: 9px 16px;
+    border: 1px solid var(--grey2);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--liteBlack);
+}
+
+.formGroups input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--grey1);
+}
+
+.formGroups select:focus,
+.formGroups input:focus {
+    outline: none;
+}
+
+.formGroups .borderred {
+    border: 1px solid var(--red);
+}
+
+.formError {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--red);
+    margin-top: 4px;
+    display: block;
+
+}
+
+.visible0 {
+    visibility: hidden;
+}
+
+.inputIcon {
+    display: block;
+    line-height: 0;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    padding: 14px 10px;
+    cursor: pointer;
+}
+
+.formGroups .InputinfoFlexWrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

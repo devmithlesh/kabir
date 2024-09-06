@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*--------- root variable ---------*/
+
+:root {
+    --white: #fff;
+    --white1: #FAF7F4;
+    --black: #101010;
+    --liteBlack: #27282B;
+    --grey1: #999;
+    --grey2: #CCC;
+    --red: #E53935;
+    --redHover: #CC2723;
+    --golden1: #D3A47E;
+    --golden2: #E8D6C8;
+    --golden3: #F4EFE4;
+    --golden4: #F1E6DE;
+    --golden5: #FFEBA5;
+    --golden6: #725900;
+    --blue: #9CFFFF;
+    --liteBlue1: #026C6C;
+    --green: #8DF89E;
+    --liteGreen1: #006B11;
+    --pink: #FFADFF;
+    --litePink1: #606;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.capitalise {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+/* margin top*/
+.mt2 {
+    margin-top: 2px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt12 {
+    margin-top: 12px;
+}
+
+.mt14 {
+    margin-top: 14px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt22 {
+    margin-top: 22px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt26 {
+    margin-top: 26px;
+}
+
+.mt28 {
+    margin-top: 28px;
+}
+
+.mt29 {
+    margin-top: 29px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt35 {
+    margin-top: 35px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt45 {
+    margin-top: 45px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+
+/* End margin top*/
+.mr {
+    margin-right: 4px;
+}
+
+.mr40 {
+    margin-right: 40px;
+}
+
+.ml26 {
+    margin-left: 26px;
+}
+
+.mr80 {
+    margin-right: 80px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml11 {
+    margin-left: 11px;
+}
+
+.ml9 {
+    margin-left: 9px;
+}
+
+.ml8 {
+    margin-left: 8px;
+}
+
+.ml16 {
+    margin-left: 16px;
+}
+
+/* margin bottom*/
+
+.mb4 {
+    margin-bottom: 4px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb18 {
+    margin-bottom: 18px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb22 {
+    margin-bottom: 22px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb35 {
+    margin-bottom: 35px;
+}
+
+.mb37 {
+    margin-bottom: 37px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb45 {
+    margin-bottom: 45px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.mb80 {
+    margin-bottom: 50px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
+}
+
+/* End margin bottom*/
+
+.my10 {
+    margin: 10px 0;
+}
+
+.my24 {
+    margin: 24px 0;
+}
+
+/* End margin */
+
+.p_all {
+    padding: 20px;
+}
+
+.not_p_top {
+    padding: 0 20px 20px 20px;
+}
+
+/* padding top */
+.pt5 {
+    padding-top: 5px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pt24 {
+    padding-top: 24px;
+}
+
+.pt25 {
+    padding-top: 25px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pt80 {
+    padding-top: 80px;
+}
+
+
+/* padding top */
+
+.pr40 {
+    padding-right: 40px;
+}
+
+/* padding bottom */
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb14 {
+    padding-bottom: 14px;
+}
+
+.pb16 {
+    padding-bottom: 16px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pb22 {
+    padding-bottom: 22px;
+}
+
+.pb24 {
+    padding-bottom: 24px;
+}
+
+.pb25 {
+    padding-bottom: 25px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.pb40 {
+    padding-bottom: 40px;
+}
+
+.pb60 {
+    padding-bottom: 60px;
+}
+
+.pb80 {
+    padding-bottom: 80px;
+}
+
+.px16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.px24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.py16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* padding bottom */
+
+.pr5 {
+    padding-right: 5px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+/* End padding */
+
+/* gap */
+
+.gap2 {
+    gap: 2px;
+}
+
+.gap5 {
+    gap: 5px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap10 {
+    gap: 10px;
+}
+
+.gap12 {
+    gap: 12px;
+}
+
+.gap15 {
+    gap: 15px;
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap32 {
+    gap: 32px;
+}
+
+.gap40 {
+    gap: 40px;
+}
+
+.gap80 {
+    gap: 80px;
+}
+
+/* End gap */
+
+
+/* ------- fontsize ----- */
+.text40 {
+    color: var(--liteBlack);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.text20 {
+    color: var(--liteBlack);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%
+}
+
+.text15 {
+    color: var(--grey1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.text16 {
+    color: var(--liteBlack);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+/* ------- End fontsize ----- */
+
+/*--------- End root variable ---------*/
+
+/*------------- Login form -------------*/
+.loginFromWrapper {
+    width: 100%;
+    height: 100vh;
+    background: var(--golden3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginFromWrapper form {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    border-radius: 20px;
+    background: var(--white1);
+    width: 100%;
+    max-width: 1320px;
+    padding: 20px;
+}
+
+.rightLoginBox {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+}
+
+.rightLoginBox img {
+    min-height: 561px;
+}
+
+.leftLoginBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: calc(100% - 720px);
+    padding-left: 40px;
+}
+
+.loginHeading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.loginWidthgoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--liteBlack);
+    width: 100%;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.loginLine {
+    position: relative;
+}
+
+.loginLine::before {
+    content: '';
+    position: absolute;
+    left: 156px;
+    top: 9px;
+    width: 170px;
+    height: 1px;
+    background: var(--grey2);
+}
+
+.loginLine::after {
+    content: '';
+    position: absolute;
+    right: 156px;
+    top: 9px;
+    width: 170px;
+    height: 1px;
+    background: var(--grey2);
+}
+
+.inputGroupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rememberMe h3.text16 {
+    color: var(--liteBlack);
+    cursor: pointer;
+}
+
+.leftLoginBox .inputGroupForm {
+    width: 100%;
+}
+
+.leftLoginBox .inputGroupForm input {
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 30.227px;
+    border: 1px solid var(--grey2);
+    min-height: 55px;
+    background: var(--white1);
+}
+
+.rightLoginBox {
+    border-radius: 12px;
+    background: var(--golden4);
+}
+
+/*------------- End Login form -------------*/
+
+/*----------------------  @Loading button  ---------------------- */
+
+.loadingButtonblock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+.loadingButtonblock .buttonSpinner {
+    border: 2px solid var(--black);
+    border-left-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spinLoading 1s linear infinite;
+}
+
+.loadingWhite .loadingButtonblock .buttonSpinner {
+    border-color: var(--white);
+    border-left-color: transparent;
+}
+
+@keyframes spinLoading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*---------------------- End @Loading button  ---------------------- */
+
+
+/* ----------------- Home Page --------------------- */
+body {
+    background: var(--golden3);
+}
+
+.homePage {
+    width: 100%;
+}
+
+/* ----------------- End Home Page --------------------- */
