@@ -17,13 +17,22 @@
     padding: 8px 12px;
 }
 
-.goldenButton{
+.goldenButton {
     border-radius: 100px;
     background: var(--golden2);
     color: var(--liteBlack);
     padding: 15px 30px;
     font-size: 15px;
     min-height: 50px;
+}
+
+.goldenButtonSm {
+    border-radius: 100px;
+    background: var(--golden2);
+    color: var(--liteBlack);
+    padding: 15px 30px;
+    font-size: 15px;
+    min-height: 45px;
 }
 
 /*--------- Button Component ---------*/

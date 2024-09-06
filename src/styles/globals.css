@@ -21,6 +21,7 @@ img {
     --liteBlack: #27282B;
     --grey1: #999;
     --grey2: #CCC;
+    --grey3: #9C9C9E;
     --red: #E53935;
     --redHover: #CC2723;
     --golden1: #D3A47E;
@@ -787,7 +788,7 @@ body {
     letter-spacing: -2.5px;
 }
 
-.discription{
+.discription {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -795,16 +796,16 @@ body {
     gap: 20px;
 }
 
-.discription p{
+.discription p {
     width: 100%;
     max-width: 459px;
 }
 
-.discription p span{
+.discription p span {
     font-weight: 600;
 }
 
-.lineIconCenter{
+.lineIconCenter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -813,3 +814,49 @@ body {
 }
 
 /* ----------------- End Home Page --------------------- */
+
+/*---------------- Work Page ----------------*/
+.workPageFlexWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workPagecard {
+    border-radius: 30px;
+    background: var(--white1);
+    width: 100%;
+    max-width: 700px;
+    height: 425px;
+    transition: height .4s;
+    overflow:  hidden;
+}
+
+.workPagecard:hover {
+    height: 100%;
+}
+
+.cardWorkContent {
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardWorkContent h3 {
+    color: var(--grey3);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+}
+
+.workPagecard h3 img {
+    transition: .3s;
+}
+
+.workPagecard:hover .cardWorkContent img {
+    transform: translate(4px, -5px);
+}
+
+/*---------------- End Work Page---------------- */
