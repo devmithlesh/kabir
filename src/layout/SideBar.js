@@ -1,4 +1,3 @@
-import { CrossIcon } from '@/pages/icons'
 import React from 'react'
 
 const SideBar = ({ isActive, setIsActive }) => {
@@ -24,7 +23,6 @@ const SideBar = ({ isActive, setIsActive }) => {
 
     return (
         <div className={`sidebarWrapper ${isActive && 'openActive'}`}>
-            <span className='crossIconSidebar' onClick={() => setIsActive(!isActive)}><CrossIcon /></span>
             <ul>
                 {
                     data.map((value, index) => {

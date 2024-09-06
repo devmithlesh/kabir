@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/globals.css'
-import { EyeIcon, HideEye } from './icons';
 import SignIn from '@/components/LoginPage/SignIn';
 import CreateAccount from '@/components/LoginPage/CreateAccount';
 

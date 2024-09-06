@@ -17,6 +17,7 @@ img {
     --white: #fff;
     --white1: #FAF7F4;
     --black: #101010;
+    --black1: #333333;
     --liteBlack: #27282B;
     --grey1: #999;
     --grey2: #CCC;
@@ -28,12 +29,16 @@ img {
     --golden4: #F1E6DE;
     --golden5: #FFEBA5;
     --golden6: #725900;
-    --blue: #9CFFFF;
-    --liteBlue1: #026C6C;
-    --green: #8DF89E;
-    --liteGreen1: #006B11;
-    --pink: #FFADFF;
-    --litePink1: #606;
+    --golden7: #543b00;
+    --blue: #9CFFFF !important;
+    --blue1: #004444 !important;
+    --liteBlue1: #026C6C !important;
+    --green: #8DF89E !important;
+    --green1: #006b11 !important;
+    --liteGreen1: #006B11 !important;
+    --pink: #FFADFF !important;
+    --pink1: #480048 !important;
+    --litePink1: #606 !important;
 }
 
 .container {

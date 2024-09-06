@@ -1,9 +1,8 @@
 import React from 'react'
 import Button from '../Button/Button'
-import { EyeIcon, HideEye } from '@/pages/icons'
 import InputField from '../InputField/InputField'
 
-const CreateAccount = ({type, setType}) => {
+const CreateAccount = ({ type, setType }) => {
     return (
         <>
             <div className="loginHeading">
@@ -23,16 +22,16 @@ const CreateAccount = ({type, setType}) => {
                 <InputField
                     onclick={() => setType(!type)}
                     placeholder="Your Password"
-                    inputIcon={type ? <EyeIcon /> : <HideEye />}
+                    inputIcon={<img src={`/assets/svg/${type ? 'eyeIcon' : 'hideIcon'}.svg`} alt='' />}
                     type={type ? "text" : "password"}
                 />
                 <InputField
                     onclick={() => setType(!type)}
                     placeholder="Your Confirm Password"
-                    inputIcon={type ? <EyeIcon /> : <HideEye />}
+                    inputIcon={<img src={`/assets/svg/${type ? 'eyeIcon' : 'hideIcon'}.svg`} alt='' />}
                     type={type ? "text" : "password"}
                 />
-              
+
                 <Button name={'Sign Up'} className={'goldenButton mt15'} />
             </div>
         </>

@@ -3,7 +3,12 @@ import './layout.css'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <footer>
+            <div className='footerLeft'>
+            <img src="/assets/svg/winIcon.svg" alt="" />
+            </div>
+            <div className='footerRight'></div>
+        </footer>
     )
 }
 

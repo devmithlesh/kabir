@@ -9,22 +9,25 @@
     width: 100%;
     height: 100vh;
     position: fixed;
-    background: var(--golden3);
+    background: rgba(244, 239, 228, 0.60);
     top: 0;
     left: 0;
+    display: none;
 }
 
-.sidebarWrapper.openActive{
+.sidebarWrapper.openActive {
     backdrop-filter: blur(10px);
     opacity: 1;
+    display: block;
 }
 
-.sidebarWrapper .crossIconSidebar {
-    position: absolute;
-    top: 40px;
-    right: 31%;
+.crossIconSidebar {
     cursor: pointer;
     transition: .2s;
+    position: relative;
+    z-index: 10;
+    line-height: 0;
+    transition: .4s;
 }
 
 .sidebarWrapper ul {
@@ -34,50 +37,53 @@
     justify-content: center;
     height: 100%;
     gap: 10px;
-    -webkit-animation:.6s cubic-bezier(.23,1,.32,1) both slide-in-blurred-top;
-    animation:.6s cubic-bezier(.23,1,.32,1) both slide-in-blurred-top;
+    -webkit-animation: .6s cubic-bezier(.23, 1, .32, 1) both slide-in-blurred-top;
+    animation: .6s cubic-bezier(.23, 1, .32, 1) both slide-in-blurred-top;
 }
 
 @-webkit-keyframes slide-in-blurred-top {
     0% {
-      -webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);
-      transform:translateY(-1000px) scaleY(2.5) scaleX(.2);
-      -webkit-transform-origin:50% 0%;
-      transform-origin:50% 0%;
-      -webkit-filter:blur(40px);
-      filter:blur(40px);
-      opacity:0
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0
     }
+
     100% {
-      -webkit-transform:translateY(0) scaleY(1) scaleX(1);
-      transform:translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin:50% 50%;
-      transform-origin:50% 50%;
-      -webkit-filter:blur(0);
-      filter:blur(0);
-      opacity:1
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
     }
-  }
-  @keyframes slide-in-blurred-top {
+}
+
+@keyframes slide-in-blurred-top {
     0% {
-      -webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);
-      transform:translateY(-1000px) scaleY(2.5) scaleX(.2);
-      -webkit-transform-origin:50% 0%;
-      transform-origin:50% 0%;
-      -webkit-filter:blur(40px);
-      filter:blur(40px);
-      opacity:0
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0
     }
+
     100% {
-      -webkit-transform:translateY(0) scaleY(1) scaleX(1);
-      transform:translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin:50% 50%;
-      transform-origin:50% 50%;
-      -webkit-filter:blur(0);
-      filter:blur(0);
-      opacity:1
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
     }
-  }
+}
 
 .sidebarWrapper ul li {
     border-radius: 85.708px;
@@ -91,9 +97,9 @@
     padding: 30px 60px;
 }
 
-.sidebarWrapper ul li:hover{
+.sidebarWrapper ul li:hover {
     padding: 15px 160px;
-    
+
 }
 
 .sidebarWrapper ul li span {
@@ -134,5 +140,22 @@
 .sidebarWrapper ul li:nth-child(4) span {
     color: var(--litePink1);
 }
+
+.sidebarWrapper ul li:hover:nth-child(1) span {
+    color: var(--golden7);
+}
+
+.sidebarWrapper ul li:hover:nth-child(2) span {
+    color: var(--blue1);
+}
+
+.sidebarWrapper ul li:hover:nth-child(3) span {
+    color: var(--green1);
+}
+
+.sidebarWrapper ul li:hover:nth-child(4) span {
+    color: var(--pink1);
+}
+
 
 /*----------------- Sidebar -----------------*/

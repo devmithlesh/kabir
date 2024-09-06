@@ -2,7 +2,6 @@ import React from 'react'
 import InputField from '../InputField/InputField'
 import CustomCheckbox from '../CustomCheckbox/CustomCheckbox'
 import Button from '../Button/Button'
-import { EyeIcon, HideEye } from '@/pages/icons'
 
 const SignIn = ({ type, setType, setIsAccount }) => {
     return (
@@ -24,7 +23,7 @@ const SignIn = ({ type, setType, setIsAccount }) => {
                 <InputField
                     onclick={() => setType(!type)}
                     placeholder="Your Password"
-                    inputIcon={type ? <EyeIcon /> : <HideEye />}
+                    inputIcon={<img src={`/assets/svg/${type ? 'eyeIcon' : 'hideIcon'}.svg`} alt='' />}
                     type={type ? "text" : "password"}
                 />
                 <div className="rememberMe">
