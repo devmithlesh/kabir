@@ -489,6 +489,14 @@ button {
 
 
 /* ------- fontsize ----- */
+
+.text12 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--liteBlack);
+}
+
 .text40 {
     color: var(--liteBlack);
     text-align: center;
@@ -688,5 +696,6 @@ body {
 .homePage {
     width: 100%;
 }
+
 
 /* ----------------- End Home Page --------------------- */
