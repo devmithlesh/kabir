@@ -18,7 +18,7 @@ export default function BasicDemo() {
         <SideBar isActive={isOpen} setIsActive={setIsOpen} />
 
         <div className="container">
-          <div className="mainContentWrapper mt40 mb60">
+          <div className="mainContentWrapper mt40 mb40">
 
             <div className="mainImageWrapper">
               <img src="/assets/img/mainImage.png" alt="" />

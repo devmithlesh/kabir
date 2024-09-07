@@ -3,7 +3,7 @@ import './layout.css'
 const Header = ({ setIsActive, isActive }) => {
     return (
         <section>
-            <div className='container mt60'>
+            <div className='container mt40'>
                 <div className='headerWrapper'>
                     <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="51.9784" height="51.9784" transform="translate(0 0.461243)" fill="#F4EFE4" />

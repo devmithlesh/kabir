@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const SideBar = ({ isActive, setIsActive }) => {
@@ -5,19 +6,23 @@ const SideBar = ({ isActive, setIsActive }) => {
     const data = [
         {
             list1: 'Home',
-            img: 'assets/svg/home.svg'
+            img: 'assets/svg/home.svg',
+            route: "/"
         },
         {
             list1: 'About',
-            img: 'assets/svg/about.svg'
+            img: 'assets/svg/about.svg',
+            route: "/about",
         },
         {
             list1: 'Services',
-            img: 'assets/svg/service.svg'
+            img: 'assets/svg/service.svg',
+            route: "/service",
         },
         {
             list1: 'Work',
-            img: 'assets/svg/work.svg'
+            img: 'assets/svg/work.svg',
+            route: "/work",
         },
     ]
 
@@ -27,7 +32,11 @@ const SideBar = ({ isActive, setIsActive }) => {
                 {
                     data.map((value, index) => {
                         return (
-                            <li index={index}> <img src={value.img} alt="" /> <span>{value.list1}</span></li>
+                            <li index={index} onClick={() => setIsActive(false)}>
+                                <Link href={value.route}>
+                                    <img src={value.img} alt="" /> <span>{value.list1}</span>
+                                </Link>
+                            </li>
                         )
                     })
                 }
@@ -37,3 +46,4 @@ const SideBar = ({ isActive, setIsActive }) => {
 }
 
 export default SideBar
+

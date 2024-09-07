@@ -42,6 +42,26 @@ img {
     --litePink1: #606 !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: var(--grey1);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
 .container {
     width: 100%;
     max-width: 700px;
@@ -507,6 +527,11 @@ button {
     line-height: 100%;
 }
 
+.text40service {
+    font-weight: 600;
+    text-align: left;
+}
+
 .text20 {
     color: var(--liteBlack);
     font-size: 20px;
@@ -820,6 +845,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 56px;
+    transition: 0.4s ease-in-out;
 }
 
 .workPagecard {
@@ -829,7 +857,7 @@ body {
     max-width: 700px;
     height: 425px;
     transition: height .4s;
-    overflow:  hidden;
+    overflow: hidden;
 }
 
 .workPagecard:hover {
@@ -859,4 +887,98 @@ body {
     transform: translate(4px, -5px);
 }
 
+.workPage .rts___btn.rts___tab___selected {
+    background: var(--golden2);
+    box-shadow: unset;
+    border: none;
+}
+
+.workPage .rts___btn {
+    background: var(--golden4);
+    border-radius: 100px;
+    padding: 15px 30px;
+    color: var(--liteBlack);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    box-shadow: unset;
+    border: none;
+    transition: .3s;
+}
+
 /*---------------- End Work Page---------------- */
+
+/*------------------ Services Page ------------------*/
+.serviceCardFlexWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.serviceCardWrap {
+    border-radius: 20px;
+    background: var(--white1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.serviceCardRightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.serviceCardRightSide button {
+    width: 100%;
+    font-size: 12px;
+    min-height: 35px;
+    padding: 11px 30px;
+}
+
+.serviceCardWrap .serviceCardRightSide h3 svg {
+    transition: .4s;
+}
+
+.serviceCardWrap:hover .serviceCardRightSide h3 svg {
+    transform: translate(4px, -4px);
+}
+
+.serviceCardRightSide h3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.serviceCardRightSide h3 a {
+    color: var(--liteBlack);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.44px;
+}
+
+.serviceCardRightSide ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.serviceCardRightSide li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.serviceCardRightSide li span {
+    font-weight: 600;
+}
+
+.serviceCardRightSide li p {
+    color: var(--grey3);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+/*------------------ End Services Page ------------------*/
